@@ -10,7 +10,7 @@ document.getElementById('anime-title').textContent = title || 'Anime';
 document.getElementById('anime-rating').textContent = `⭐ Rating: ${rating || 'N/A'}`;
 document.getElementById('anime-seasons').textContent = `📺 Seasons: ${seasons || 'N/A'}`;
 
-// Set the video source dynamically
+// Set the video source dynamical
 if (anime) {
   document.getElementById('anime-video').querySelector('source').src = `${anime}.mp4`;
   document.getElementById('anime-video').load(); // Reload the video with the new source
