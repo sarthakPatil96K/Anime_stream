@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Player</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="player.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <img src="assets/img/logo.jpg" style="border-radius: 50%;" alt="AnimeStream Logo">
+    <h1>AnimeStream</h1>
+  </div>
+
+  <div id="anime-details">
+    <h1 id="anime-title"></h1>
+    <p id="anime-rating"></p>
+    <p id="anime-seasons"></p>
+  </div>
+
+  <!-- Video player -->
+  <video controls id="anime-video">
+    <source src="" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Season and episode buttons -->
+  <div id="episodes" class="episode-buttons">
+    <!-- Episode buttons will be generated dynamically -->
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AnimeStream. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to external JavaScript -->
+  <script src="player.js"></script>
+</body>
+</html>

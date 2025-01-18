@@ -1,0 +1,110 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark theme background */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Navbar/logo styling */
+.navbar {
+  width: 100%;
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar h1 {
+  color: #f9d423;
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Style the video player */
+#anime-video {
+  width: 80%;
+  margin: 20px auto;
+  display: block;
+  max-width: 900px;
+  border: 4px solid #f9d423;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Layout for anime details */
+#anime-details {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#anime-details h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#anime-details p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Buttons for episodes */
+.episode-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.episode-btn {
+  background-color: #f9d423;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.episode-btn.watched {
+  background-color: #4caf50; /* Green if watched */
+  color: white;
+}
+
+.episode-btn:hover {
+  background-color: #ff6f00;
+  transform: scale(1.1);
+}
+
+/* Footer styling */
+footer {
+  width: 100%;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: auto;
+  font-size: 14px;
+}
+/* Hide scrollbar while allowing scrolling */
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+body:hover {
+  overflow: auto; /* Enables scrolling when hovering over the body */
+}

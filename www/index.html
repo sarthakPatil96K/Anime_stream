@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Streaming Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <img src="assets/img/logo.jpg" alt="logo" class="nav-item" style="border-radius: 50%;" height="50px">
+      <a class="navbar-brand" href="#">AnimeStream</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#popular">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#latest">Latest</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="genres.html">Genres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li>
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+        <form class="d-flex search-bar">
+          <input class="form-control me-2" type="search" placeholder="Search Anime..." aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="home-content text-white">
+      <h1>Welcome to AnimeStream</h1>
+      <p>Watch your favorite anime anytime, anywhere!</p>
+      <a href="#popular" class="btn btn-warning">Explore Now</a>
+    </div>
+  </section>
+  <!-- Popular Section -->
+<section id="popular" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Popular Anime</h2>
+      <div class="row">
+        <!-- Anime Card -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-secondary text-white">
+            <a href="player.html?anime=anime1&title=Anime%20Name%201&rating=8.9&seasons=3">
+              <img src="https://example.com/anime1.jpg" class="card-img-top" alt="Anime 1">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Anime Name 1</h5>
+              <p class="card-text">⭐ Rating: 8.9/10</p>
+              <p class="card-text">📺 Seasons: 3</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-secondary text-white">
+            <a href="player.html?anime=anime2&title=Anime%20Name%202&rating=9.1&seasons=2">
+              <img src="https://example.com/anime2.jpg" class="card-img-top" alt="Anime 2">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Anime Name 2</h5>
+              <p class="card-text">⭐ Rating: 9.1/10</p>
+              <p class="card-text">📺 Seasons: 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-secondary text-white">
+            <a href="player.html?anime=anime3&title=Anime%20Name%203&rating=8.5&seasons=4">
+              <img src="https://example.com/anime3.jpg" class="card-img-top" alt="Anime 3">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Anime Name 3</h5>
+              <p class="card-text">⭐ Rating: 8.5/10</p>
+              <p class="card-text">📺 Seasons: 4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
