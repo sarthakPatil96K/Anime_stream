@@ -14,11 +14,31 @@
     <h1>AnimeStream</h1>
   </div>
 
-  <div id="anime-details">
-    <h1 id="anime-title"></h1>
-    <p id="anime-rating"></p>
-    <p id="anime-seasons"></p>
-  </div>
+ <!-- player.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{title}</title>
+    <link rel="stylesheet" href="assets/player.css">
+</head>
+<body>
+    <h1>{title}</h1>
+    <img src="{image}" alt="{title}" width="300">
+    <p>{description}</p>
+    <p>Genre: {genre}</p>
+    <p>Release Date: {release_date}</p>
+
+    <h2>Watch:</h2>
+    <video width="640" height="360" controls>
+        <source src="{video_url}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <a href="/">Back to list</a>
+</body>
+</html>
+
 
   <!-- Video player -->
   <video controls id="anime-video">
